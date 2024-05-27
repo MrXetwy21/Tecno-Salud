@@ -1,36 +1,71 @@
-.navbar {
+/* ESTILOS INDEX */
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+
+.barra-nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #95f592;
-    height: 60px;
+    background-color: azure;
 }
 
-.navbar-text {
-    margin-right: 10px;
-    font-family: "Poetsen One", sans-serif;
-    color: #004AAD;
+.barra-nav-imagen{
+    width: 160px;
+    height: 75px;
+    /* margin-right: 10px; */
 }
 
-.navbar-image {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+
+/* TARJETAS */
+
+.tarjetas{
+    display: flex;
 }
 
-.home-div {
-    background-color: #5394bf;
-    border-radius: 10px;
+.tarjeta{
+    border-radius: 5px;
+    border: 1px black solid;
+    margin: 15px;
+    padding: 5px;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+
 }
 
-.home-div-contenido-titulo {
-    font-family: "Roboto Mono", monospace;
-    color: #ffffff;
+.tarjeta .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.tarjeta-footer{
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    /* background-color: gray; */
     padding: 10px;
 }
 
-.home-div-contenido-mensaje {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #ffffff;
-    padding: 10px;
+.tarjeta-boton{
+    background-color: #3671ab;
+    width: 100px;
+    height: 30px;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+}
+
+
+.imagen-tarjeta{
+    width: 300px;
+    height: 200px;
+    margin: auto;
 }
