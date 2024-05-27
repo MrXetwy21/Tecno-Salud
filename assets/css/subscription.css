@@ -1,0 +1,84 @@
+body{
+    /* background-color: #000000; */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE NAVEGACION */
+
+.barra-nav{
+    display: flex;
+    background-color: azure;
+    margin: auto;
+    padding: 10px;
+}
+
+
+.barra-nav-imagen{
+    width: 160px;
+    height: 75px;
+    /* margin-right: 10px; */
+}
+
+
+/* FORMULARIO */
+
+
+.formulario {
+    width: auto;
+    height: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario .titulo{
+    font-size: 20px;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.inp-name{
+    width: 90%;
+    padding: 10px;
+    border-radius: 2px;
+    border: black solid 1px;
+    margin-bottom: 10px;
+}
+
+.inp-mail{
+    width: 90%;
+    padding: 10px;
+    border-radius: 2px;
+    border: black solid 1px;
+    margin-bottom: 10px;
+}
+
+.btn-sub{
+    font-family: "Rubik", sans-serif;
+    width: 100%;
+    padding: 10px;
+    background-color: #3671ab;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn-sub:hover{
+    background-color: gold;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}

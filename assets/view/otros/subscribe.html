@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
+    <!-- Links -->
+    <link rel="stylesheet" href="/assets/css/subscription.css">
+    <script src="/assets/js/sweetalert2.all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("01UQuUSGDwXWESYsN"); 
+        })();
+    </script>
+    <!-- Titulo -->
+    <title>Suscription - Tecno Salud</title>
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION -->
+    <div class="barra-nav">
+        <img class="barra-nav-imagen" src="/assets/img/ts_home.png" alt="Imagen de la barra de navegación">
+        <!-- <button class="subscribe-button" onclick="window.location.href='/assets/view/otros/subscribe.html'" >Suscribirse</button> -->
+    </div>
+    <br>
+    <div class="formulario">
+        <form onsubmit="return validateRecaptcha()">
+        <h2 class="titulo">Subscribete a tecno salud gratis!</h2>
+        <label for="name">Nombre</label>
+        <br>
+        <input class="inp-name" placeholder="Introduce tu nombre" type="text" id="name" name="name" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input class="inp-mail" placeholder="Introduce tu email" type="email" id="email" name="email" required>
+        <br>
+        <div class="g-recaptcha" data-sitekey="6LfV3-gpAAAAAJZTt3N1eI9_gSnGVgaKFup-Vf08"></div>
+        <input class="btn-sub" type="submit" value="Enviar">
+    </form>
+    </div>
+
+
+
+    <script src="/assets/js/recaptcha.js"></script>
+</body>
+</html>
