@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #95f592;
+    height: 60px;
+}
+
+.navbar-text {
+    margin-right: 10px;
+    font-family: "Poetsen One", sans-serif;
+    color: #004AAD;
+}
+
+.navbar-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.home-div {
+    background-color: #5394bf;
+    border-radius: 10px;
+}
+
+.home-div-contenido-titulo {
+    font-family: "Roboto Mono", monospace;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.home-div-contenido-mensaje {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+}
