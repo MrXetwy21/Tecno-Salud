@@ -1,0 +1,12 @@
+body{
+    background-color: #000000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Alert{
+    color: red;
+    border-style: dotted;
+    border-color: red;
+}
