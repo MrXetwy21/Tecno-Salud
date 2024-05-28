@@ -8,7 +8,7 @@ function validateRecaptcha() {
         Swal.fire({
             icon: "error",
             title: "Error!",
-            text: "Please complete the reCAPTCHA!",
+            text: "Debes completar el reCaptcha para continuar",
           });
         return false;
     }
@@ -29,6 +29,8 @@ function sendEmail(name, email) {
             icon: "success",
             title: "Registro exitoso!",
             text: "Te hemos enviado un correo de confirmación. Revisa tu bandeja de entrada o spam.",
+          }).then(function() {
+            window.location.href = "/index.html"; 
           });
     }, function(error) {
         Swal.fire({

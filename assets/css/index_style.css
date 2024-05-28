@@ -39,6 +39,7 @@ body, html{
 .barra-nav-imagen{
     width: 160px;
     height: 75px;
+    cursor: pointer;
     /* margin-right: 10px; */
 }
 
