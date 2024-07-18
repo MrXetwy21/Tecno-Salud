@@ -9,20 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./assets/css/index_style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <!-- Titulo -->
     <title>Home - Tecno Salud</title>
 </head>
 
 <body>
 
-    <!-- BARRA DE NAVEGACION -->
-    <div class="barra-nav">
-        <img onclick="window.location.href='index.html'" class="barra-nav-imagen" src="./assets/img/ts_home.png" alt="Imagen de la barra de navegación">
-        <button class="subscribe-button" onclick="window.location.href='/assets/view/otros/subscribe.html'" >Suscribirse</button>
-        <!-- <span class="barra-nav-titulo">Tecno Salud</span> -->
-    </div>
+    <!-- Header -->
+     <header>
+        <div class="barra_navegacion">
+            <div class="logo">Tecno Salud</div>
+            <ul class="enlaces">
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="noticias">Noticias</a></li>
+                <li><a href="contactanos">Contactanos</a></li>
+                <li><a href="about">Acerca de</a></li>
+            </ul>
+            <a href="/assets/view/otros/subscribe.html" class="subscribe-button">Suscribirse</a>
+            <img src="/assets/img/menu.png" alt="" class="handler">
+        </div>
+
+        <div class="phone_menu">
+            <li><a href="inicio">Inicio</a></li>
+            <li><a href="noticias">Noticias</a></li>
+            <li><a href="contactanos">Contactanos</a></li>
+            <li><a href="about">Acerca de</a></li>
+            <li><a href="/assets/view/otros/subscribe.html">★ Suscribirse</a></li>
+        </div>
+
+     </header>
+
 
     <!-- Tarjetas Articulos -->
 
@@ -81,7 +101,8 @@
         </div>
     </div>
     
-
+    <!-- Scripts -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 
