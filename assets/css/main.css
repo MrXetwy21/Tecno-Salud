@@ -8,6 +8,7 @@
 }
 
 
+
 /* BARRA DE NAVEGACION */
 
 li {
@@ -21,7 +22,8 @@ a {
 }
 
 a:hover {
-    color: rgb(209, 121, 6);
+    color:  #3671ab;
+    font-weight: bold;
 }
 
 header {
@@ -42,6 +44,19 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+
+.logo_img {
+    display: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo_img:hover{
+    transform: rotate(180deg);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .enlaces {
@@ -107,6 +122,13 @@ header {
         display: none;
     }
 
+    .logo_img {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
     .enlaces {
         display: none;
         position: absolute;
@@ -120,6 +142,118 @@ header {
     }
 }
 
+/* BIENVENIDA */
+
+.welcome{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #3671ab;
+    color: white;
+
+}
+
+.welcome button{
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.welcome button:hover{
+    scale: 1.1;
+    color: white;
+    transition: 0.5s;
+}
+
+
+.sugest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.new-title{
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid black;
+
+    
+}   
+
+/* SLIDERS */
+
+.slider{
+    display: none;
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.sliders{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+
+
+.slider_section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+
+
+.slider_imgs{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+.btn_derecha, .btn_izquierda{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn_derecha{
+    right: 10px;
+}
+
+.btn_izquierda{
+    left: 10px;
+}
+
+.btn_derecha:hover, .btn_izquierda:hover{
+    background-color: #3671ab;
+    color: white;
+    transition: .5s ease;
+}
+
+@media (max-width: 760px) {
+    .slider{
+        display: none;
+    }
+}
 
 /* TARJETAS */
 
@@ -195,7 +329,16 @@ header {
 /* FOOTER */
 
 .footer{
-    background-color: gray;
+    background-color:  #3671ab;
     width: 100%;
-    height: 50px;
+    height: 5rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.footer i{
+    margin: 5px;
+    width: 30px;
 }

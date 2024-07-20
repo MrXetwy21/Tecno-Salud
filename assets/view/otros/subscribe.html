@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">    
     <!-- Links -->
     <link rel="stylesheet" href="/assets/css/subscription.css">
+    <link rel="stylesheet" href="/assets/css/FontAwesome/css/fontawesome.css">
+    <link rel="stylesheet" href="/assets/css/FontAwesome/css/brands.css">
+    <link rel="stylesheet" href="/assets/css/FontAwesome/css/solid.css"> 
     <script src="/assets/js/sweetalert2.all.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -25,11 +28,33 @@
 </head>
 <body>
 
-    <!-- BARRA DE NAVEGACION -->
-    <div class="barra-nav">
-        <img onclick="window.location.href='/index.html'"  class="barra-nav-imagen" src="/assets/img/ts_home.png" alt="Imagen de la barra de navegación">
-        <!-- <button class="subscribe-button" onclick="window.location.href='/assets/view/otros/subscribe.html'" >Suscribirse</button> -->
-    </div>
+    <!-- Header -->
+    <!-- Header -->
+    <header>
+        <div class="barra_navegacion">
+            
+            <a href="/index.html"><img src="/assets/img/TecnoSalud.svg" alt="TecnoSalud Logo" class="logo_img"></a>
+            <div class="logo">Tecno Salud</div>
+            <ul class="enlaces">
+                <li><a href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li><a href="noticias"><i class="fa-solid fa-newspaper"></i> Noticias</a></li>
+                <li><a href="contactanos"><i class="fa-solid fa-id-card-clip"></i> Contactanos</a></li>
+                <li><a href="about"><i class="fa-solid fa-circle-info"></i> Acerca de</a></li>
+            </ul>
+            <a href="/assets/view/otros/subscribe.html" class="subscribe-button">Suscribirse</a>
+            <img src="/assets/img/menu.png" alt="" class="handler">
+        </div>
+
+        <div class="phone_menu">
+            <li><a href="/index.html"><i class="fa-solid fa-house"></i> Inicio</a></li>
+            <li><a href="noticias"><i class="fa-solid fa-newspaper"></i> Noticias</a></li>
+            <li><a href="contactanos"><i class="fa-solid fa-id-card-clip"></i> Contactanos</a></li>
+            <li><a href="about"><i class="fa-solid fa-circle-info"></i> Acerca de</a></li>
+            <li><a href="/assets/view/otros/subscribe.html"><i class="fa-solid fa-star"></i> Suscribirse</a></li>
+        </div>
+
+     </header>
+
     <br>
     <div class="formulario">
         <form onsubmit="return validateRecaptcha()">
