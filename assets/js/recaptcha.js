@@ -1,4 +1,4 @@
-
+/* VLAIDACION DE RECAPTCHA */
 function validateRecaptcha() {
     const recaptchaResponse = document.getElementById('g-recaptcha-response').value;
     const email = document.getElementById('email').value;
@@ -17,6 +17,8 @@ function validateRecaptcha() {
     return false;
 }
 
+
+/* ENVIO DEL CORREO A LA API EMAILJS */
 function sendEmail(name, email) {
     emailjs.send('service_o62f7iq', 'template_7gcf31q', {
         name: name,
@@ -64,4 +66,26 @@ document.addEventListener('DOMContentLoaded', function() {
     phoneMenu.addEventListener('click', function(event) {
         event.stopPropagation();
     });
+});
+
+
+
+/* FUNCION PARA OCULTAR ALERTA*/
+
+setTimeout(function() {
+    const alerts = document.querySelector('.alerts');
+    alerts.style.transition = 'opacity 0.5s';
+    alerts.style.opacity = '0';
+    setTimeout(function() {
+        alerts.style.display = 'none';
+    }, 500);
+}, 5000);
+
+document.querySelector('.x-btn').addEventListener('click', function() {
+    const alerts = document.querySelector('.alerts');
+    alerts.style.transition = 'opacity 0.5s';
+    alerts.style.opacity = '0';
+    setTimeout(function() {
+        alerts.style.display = 'none';
+    }, 500);
 });

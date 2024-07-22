@@ -155,6 +155,10 @@ header {
 
 }
 
+.parrafo_bienvenida{
+    margin: 4px;
+}
+
 .welcome button{
     background-color: transparent;
     color: white;
@@ -182,114 +186,49 @@ header {
     margin: 20px;
     padding: 5px;
     font-size: 20px;
-    border: 1px solid black;
-
-    
 }   
 
-/* SLIDERS */
 
-.slider{
-    display: none;
-    margin: 0 auto;
-    width: 600px;
-    height: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-   
-}
-
-.sliders{
-    width: 300%;
-    height: 100%;
-    display: flex;
-}
-
-
-.slider_section{
-    width: calc(100% / 3);
-    height: 100%;
-}
-
-
-.slider_imgs{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-
-
-.btn_derecha, .btn_izquierda{
-    display: flex;
-    position: absolute;
-    top: 50%;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border-radius: 50%;
-    padding: 5px;
-    font-weight: 600;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    transition: .5s ease;
-    user-select: none;
-}
-
-.btn_derecha{
-    right: 10px;
-}
-
-.btn_izquierda{
-    left: 10px;
-}
-
-.btn_derecha:hover, .btn_izquierda:hover{
-    background-color: #3671ab;
-    color: white;
-    transition: .5s ease;
-}
-
-@media (max-width: 760px) {
-    .slider{
-        display: none;
-    }
-}
 
 /* TARJETAS */
 
-.tarjetas{
+.tarjetas {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 15px; 
 }
 
-.tarjeta{
+.tarjeta {
+    border: 1px solid #e1e1e1;
+    gap: 1rem;
     border-radius: 5px;
-    /* border: 1px black solid; */
-    margin: 15px;
+    margin: 15px; 
     padding: 10px;
-    flex: 50%;
     display: flex;
     flex-direction: column;
+    flex: 1 0 100%; 
+    max-width: calc(100% - 30px); 
 }
 
-.tarjeta:hover{
+.tarjeta:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition: 0.5s;
 }
 
-.tarjeta .content{
+.tarjeta .content {
     flex-grow: 1;
     flex-shrink: 1;
 }
 
-.tarjeta-footer{
+.tarjeta-footer {
     display: flex;
-    justify-content: flex-end; 
-    align-items: center; 
+    justify-content: flex-end;
+    align-items: center;
     padding: 10px;
 }
 
-.tarjeta-boton{
+.tarjeta-boton {
     background-color: #3671ab;
     width: 120px;
     height: 40px;
@@ -300,30 +239,32 @@ header {
     padding: 5px;
 }
 
-.tarjeta-boton:hover{
+.tarjeta-boton:hover {
     background-color: #111563;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.imagen-tarjeta{
+.imagen-tarjeta {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-
 @media screen and (min-width: 768px) {
     .tarjeta {
-        flex: 33.33%; 
+        flex: 1 0 30%; 
+        max-width: 30%; 
     }
 }
 
 @media screen and (max-width: 767px) {
     .tarjeta {
-        flex: 100%;
+        flex: 1 0 100%; 
+        max-width: 100%;
     }
 }
+
 
 
 /* FOOTER */
