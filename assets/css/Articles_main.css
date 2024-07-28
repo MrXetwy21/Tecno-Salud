@@ -1,15 +1,94 @@
-/* ESTILOS INDEX */
+/* Importado de fuentes */
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/assets/css/Fonts/Urbanist-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-*{
+@font-face {
+    font-family: 'Staatliches';
+    src: url('/assets/css/Fonts/Staatliches-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Belanosima';
+    src: url('/assets/css/Fonts/Belanosima-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 
+body {
+    margin-top: 80px;
+}
 
-/* BARRA DE NAVEGACION */
+/* Cuerpo */
+.articulo {
+    margin: 20px;
+    text-align: justify;
+}
 
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cuerpo {
+    font-family: 'Urbanist', sans-serif;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.subtitle {
+    font-family: 'Belanosima', sans-serif;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+/* Imágenes */
+.art_imgs {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.art_imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #3671ab;
+    width: 100%;
+    height: 5rem;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+}
+
+.footer i {
+    margin: 5px;
+    width: 30px;
+}
+
+/* Barra de navegación */
 li {
     list-style: none;
 }
@@ -21,7 +100,7 @@ a {
 }
 
 a:hover {
-    color:  #3671ab;
+    color: #3671ab;
     font-weight: bold;
 }
 
@@ -38,6 +117,15 @@ header {
     align-items: center;
     justify-content: space-between;
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+    padding: 0 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .logo {
@@ -45,14 +133,13 @@ header {
     font-weight: bold;
 }
 
-
 .logo_img {
     display: none;
     width: 2rem;
     height: 2rem;
 }
 
-.logo_img:hover{
+.logo_img:hover {
     transform: rotate(180deg);
     transition: 0.5s;
     cursor: pointer;
@@ -89,7 +176,7 @@ header {
 
 .phone_menu {
     display: none;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     top: 60px;
     width: 300px;
@@ -97,6 +184,7 @@ header {
     backdrop-filter: blur(100px);
     border-radius: 10px;
     overflow: hidden;
+    z-index: 999;
 }
 
 .phone_menu li {
@@ -128,9 +216,10 @@ header {
     .logo {
         display: none;
     }
+    
     .enlaces {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 60px;
         left: 0;
         width: 100%;
@@ -138,68 +227,6 @@ header {
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
+        z-index: 1000;
     }
-}
-
-
-
-
-/* CUERPO */
-
-.articulo {
-    margin: 20px;
-    text-align: justify;
-}
-
-.titulo{
-    font-size: 30px;
-    font-weight: bold;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-}
-
-.cuerpo{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
-.subtitle{
-    font-style: bold;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-/* IMAGENES */
-
-.art_imgs {
-    width: 100%;
-    height: auto; /* La imagen ocupará el 100% de la altura de la ventana */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
-}
-
-.art_imgs img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* La imagen se ajustará para cubrir el contenedor sin distorsionarse */
-    display: block;
-}
-
-/* FOOTER */
-
-.footer{
-    background-color:  #3671ab;
-    width: 100%;
-    height: 5rem;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    align-content: center;
-}
-
-.footer i{
-    margin: 5px;
-    width: 30px;
 }

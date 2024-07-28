@@ -1,4 +1,4 @@
-/* VLAIDACION DE RECAPTCHA */
+/* VALIDACION DE RECAPTCHA */
 function validateRecaptcha() {
     const recaptchaResponse = document.getElementById('g-recaptcha-response').value;
     const email = document.getElementById('email').value;
